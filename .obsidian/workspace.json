@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1fe34f89e02368c5",
+        "id": "77722e30d2a632d1",
         "type": "tabs",
         "children": [
           {
-            "id": "ba98e9690f9f97bf",
+            "id": "23a872a6fdbedafe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comunicacion de Datos/Anotaciones de Clase.md",
+                "file": "Electronica Digital III/Teorico.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comunicacion de Datos/Anotaciones de Clase.md",
+                "file": "Electronica Digital III/Teorico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comunicacion de Datos/Anotaciones de Clase.md",
+                "file": "Electronica Digital III/Teorico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comunicacion de Datos/Anotaciones de Clase.md"
+                "file": "Electronica Digital III/Teorico.md"
               }
             }
           }
@@ -146,20 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba98e9690f9f97bf",
+  "active": "23a872a6fdbedafe",
   "lastOpenFiles": [
-    "Comunicacion de Datos/Actividades.md",
-    "Comunicacion de Datos/Anotaciones de Clase.md",
-    "Pasted image 20230903212154.png",
-    "Pasted image 20230903211748.png",
-    "Electronica Digital III/Practico.md",
-    "Electronica Digital III/Teorico.md",
-    "Pasted image 20230830110125.png][este es un logo.md",
     "Pasted image 20230830110125.png",
+    "Pasted image 20230903212154.png",
+    "Pasted image 20230905191756.png",
+    "Pasted image 20230905191846.png",
     "Pasted image 20230830105607.png",
     "Pasted image 20230826191400.png",
-    "Comunicacion de Datos/Teorico-Practico.md",
     "Pasted image 20230826192539.png",
+    "Pasted image 20230903211748.png",
+    "Pasted image 20230905184744.png.md",
+    "Electronica Digital III/Teorico.md",
+    "Pasted image 20230905191835.png",
+    "Electronica Digital III/Practico.md",
+    "Comunicacion de Datos/Actividades.md",
+    "Comunicacion de Datos/Teorico-Practico.md",
+    "Comunicacion de Datos/Anotaciones de Clase.md",
+    "Pasted image 20230830110125.png][este es un logo.md",
     "Untitled.md",
     "Comunicacion de Datos",
     "Electronica Digital III/Untitled",
