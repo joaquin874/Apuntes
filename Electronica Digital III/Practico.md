@@ -29,4 +29,17 @@ La función **retardo(void)** se ocupa de dar un delay para que se pueda ver com
 * Existen 33 niveles de prioridad para las interrupciones
 * A diferencia del PIC16F887 que tiene 1 interrupcion externa (RB0), la LPC1769 contiene 4 interrupciones externas 
 * Se puede activar las interrupciones por flanco ascendente (0), descendente (1) o ambas al mismo tiempo. (**Table 103 GPIO Interrupt register map**)
-* 
+ 
+El orden en que se configura los pines puede afectar su funcionamiento, por ejemplo:
+
+```
+// Configurar primero con pull up y luego como input o output
+LPC_PINCON->PINMODE0 &= ~(0x0F<<0);  //Configura con pull up P0.0 y P0.1
+LPC_GPIO0->FIODIR = (0x03<<0);       //Configura como entrada
+
+// Configurar en el orden inverso
+LPC_GPIO0->FIODIR = (0x03<<0);
+LPC_PINCON->PINMODE0 &= ~(0x0F<<0);
+```
+
+Es recomendable configurar primero el pullup o pulldown y luego si lo utilizare como input o output

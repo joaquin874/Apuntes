@@ -67,3 +67,39 @@ Tiene las siguientes características:
 ![[Pasted image 20230830110125.png]]
 
 **El triangulo al interior del bloque hace referencia a que el bloque responderá a un flanco descendiente o ascendente**
+
+## Clase Sep 6
+
+### ADC
+
+* A diferencia del PIC que tiene un ADC  de 10 bits (aproximaciones sucesivas), la LPC1769 tiene un ADC de 12 bits.
+* Multiplexado de entrada entre 8 pines.
+* Modo de Apagado (Bajo consumo).
+* Rango de medición VREFN a VREFP (tipicamente 3V, sin exeder el nivel de voltaje VDDA)
+* Tasa de Conversion de 12 bits de 200 KHz
+* Para entrada digital 5V y para entrada analogica 3V
+* Modo de conversion de rafaga para entradas simple o multiples (Modo BURST).
+* Conversion opcional en la transiscion en el pin de entrada o la senial de coincidencia del temporizador.
+
+Usar cualquier dispositivo periférico implica tres pasos principales:
+1. Encender el periférico
+2. Configurando el reloj periférico
+3. Configurar las funciones pin
+
+Para configurar el ADC se utiliza el registro PCONP(Registro de control de Potencia para Perfiericos) y tambien configurar un reloj periferico con el registro PCLKSEL0
+
+![[Pasted image 20230906163515.png]]
+*CAN1 y CAN2 es un protocolo de comunicacion utilizado en aplicaciones industriales y automotrices.
+
+* La LPC permite usar fuentes externas como voltaje de referncia para evitar el ruido que produce la fuente interna de la LPC 
+### Registros del ADC
+
+![[Pasted image 20230906164907.png]]
+
+![[Pasted image 20230906165509.png]]
+
+*B (Burst) y E (Edge)
+* Cuando se habilita el bit de Burst (bit 16) queda inhabilitado los pines de Start, ya que comienza a convertir en el momento que se habilita de bit de Burst
+![[Pasted image 20230906165932.png]]
+
+OVERRUN avisa si el ADC sigue convirtiendo
